@@ -26,7 +26,7 @@ jobs:
       run: python linear_model.py
 
     - name: docker login
-      env:
+      env: 
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         
